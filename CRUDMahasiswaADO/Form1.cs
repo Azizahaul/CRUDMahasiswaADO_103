@@ -79,6 +79,72 @@ namespace CRUDMahasiswaADO
                 MessageBox.Show("Gagal menampilkan data: " + ex.Message);
             }
         }
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (conn.State == System.Data.ConnectionState.Closed)
+                {
+                    conn.Open();
+                }
+
+                if (Label1.Text == "")
+                {
+                    MessageBox.Show("NIM harus diisi");
+                    Label1.Focus();
+                    return;
+                }
+                if (Label2.Text == "")
+                {
+                    MessageBox.Show("Nama harus diisi");
+                    Label2.Focus();
+                    return;
+                }
+                if (cmbJK.Text == "")
+                {
+                    MessageBox.Show("Jenis Kelamin harus dipilih");
+                    cmbJK.Focus();
+                    return;
+                }
+                if (Label6.Text == "")
+                {
+                    MessageBox.Show("Kode Prodi harus diisi");
+                    Label6.Focus();
+                    return;
+                }
+
+                string query = @"INSERT INTO Mahasiswa
+                                (NIM, Nama, JenisKelamin, TanggalLahir, Alamat, KodeProdi, TanggalDaftar)
+                                VALUES
+                                (@NIM, @Nama, @JK, @TanggalLahir, @Alamat, @KodeProdi, @TanggalDaftar)";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@NIM", Label1.Text);
+                cmd.Parameters.AddWithValue("@Nama", Label2.Text);
+                cmd.Parameters.AddWithValue("@JK", cmbJK.Text);
+                cmd.Parameters.AddWithValue("@TanggalLahir", dtpTanggalLahir.Value.Date);
+                cmd.Parameters.AddWithValue("@Alamat", label3.Text);
+                cmd.Parameters.AddWithValue("@KodeProdi", Label6.Text);
+                cmd.Parameters.AddWithValue("@TanggalDaftar", DateTime.Now);
+
+                int result = cmd.ExecuteNonQuery();
+
+                if (result > 0)
+                {
+                    MessageBox.Show("Data mahasiswa berhasil ditambahkan");
+                    ClearForm();
+                    btnLoad.Click(null, null);
+                }
+                else
+                {
+                    MessageBox.Show("Data gagal ditambahkan");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Terjadi kesalahan: " + ex.Message);
+            }
+        }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
         {

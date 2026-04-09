@@ -28,46 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.Label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.cmbjk = new System.Windows.Forms.ComboBox();
+            this.Label5 = new System.Windows.Forms.Label();
+            this.Label4 = new System.Windows.Forms.Label();
+            this.txtNIM = new System.Windows.Forms.TextBox();
+            this.txtNama = new System.Windows.Forms.TextBox();
+            this.cmbJK = new System.Windows.Forms.ComboBox();
             this.dtpTanggalLahir = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtAlamat = new System.Windows.Forms.TextBox();
+            this.Label6 = new System.Windows.Forms.Label();
+            this.txtKodeProdi = new System.Windows.Forms.TextBox();
+            this.btnConnect = new System.Windows.Forms.TextBox();
+            this.btnDelete = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.TextBox();
+            this.btnInsert = new System.Windows.Forms.TextBox();
+            this.btnLoad = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // Label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "NIM";
+            this.Label1.AutoSize = true;
+            this.Label1.Location = new System.Drawing.Point(34, 36);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(38, 20);
+            this.Label1.TabIndex = 0;
+            this.Label1.Text = "NIM";
             // 
-            // label2
+            // Label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nama";
+            this.Label2.AutoSize = true;
+            this.Label2.Location = new System.Drawing.Point(34, 76);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(51, 20);
+            this.Label2.TabIndex = 1;
+            this.Label2.Text = "Nama";
             // 
             // label3
             // 
@@ -78,45 +78,45 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Alamat";
             // 
-            // label4
+            // Label5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 171);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Tanggal Lahir";
+            this.Label5.AutoSize = true;
+            this.Label5.Location = new System.Drawing.Point(34, 171);
+            this.Label5.Name = "Label5";
+            this.Label5.Size = new System.Drawing.Size(105, 20);
+            this.Label5.TabIndex = 3;
+            this.Label5.Text = "Tanggal Lahir";
             // 
-            // label5
+            // Label4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(34, 124);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Jenis Kelamin";
+            this.Label4.AutoSize = true;
+            this.Label4.Location = new System.Drawing.Point(34, 124);
+            this.Label4.Name = "Label4";
+            this.Label4.Size = new System.Drawing.Size(106, 20);
+            this.Label4.TabIndex = 4;
+            this.Label4.Text = "Jenis Kelamin";
             // 
-            // textBox1
+            // txtNIM
             // 
-            this.textBox1.Location = new System.Drawing.Point(198, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 5;
+            this.txtNIM.Location = new System.Drawing.Point(198, 36);
+            this.txtNIM.Name = "txtNIM";
+            this.txtNIM.Size = new System.Drawing.Size(100, 26);
+            this.txtNIM.TabIndex = 5;
             // 
-            // textBox2
+            // txtNama
             // 
-            this.textBox2.Location = new System.Drawing.Point(198, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(185, 26);
-            this.textBox2.TabIndex = 6;
+            this.txtNama.Location = new System.Drawing.Point(198, 73);
+            this.txtNama.Name = "txtNama";
+            this.txtNama.Size = new System.Drawing.Size(185, 26);
+            this.txtNama.TabIndex = 6;
             // 
-            // cmbjk
+            // cmbJK
             // 
-            this.cmbjk.FormattingEnabled = true;
-            this.cmbjk.Location = new System.Drawing.Point(198, 124);
-            this.cmbjk.Name = "cmbjk";
-            this.cmbjk.Size = new System.Drawing.Size(121, 28);
-            this.cmbjk.TabIndex = 7;
+            this.cmbJK.FormattingEnabled = true;
+            this.cmbJK.Location = new System.Drawing.Point(198, 124);
+            this.cmbJK.Name = "cmbJK";
+            this.cmbJK.Size = new System.Drawing.Size(121, 28);
+            this.cmbJK.TabIndex = 7;
             // 
             // dtpTanggalLahir
             // 
@@ -124,72 +124,73 @@
             this.dtpTanggalLahir.Name = "dtpTanggalLahir";
             this.dtpTanggalLahir.Size = new System.Drawing.Size(200, 26);
             this.dtpTanggalLahir.TabIndex = 8;
+            this.dtpTanggalLahir.Value = new System.DateTime(2026, 4, 9, 18, 48, 21, 0);
             this.dtpTanggalLahir.ValueChanged += new System.EventHandler(this.dtpTanggalLahir_ValueChanged);
             // 
-            // textBox3
+            // txtAlamat
             // 
-            this.textBox3.Location = new System.Drawing.Point(198, 220);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 52);
-            this.textBox3.TabIndex = 9;
+            this.txtAlamat.Location = new System.Drawing.Point(198, 220);
+            this.txtAlamat.Multiline = true;
+            this.txtAlamat.Name = "txtAlamat";
+            this.txtAlamat.Size = new System.Drawing.Size(200, 52);
+            this.txtAlamat.TabIndex = 9;
             // 
-            // label6
+            // Label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(34, 310);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 20);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Kode Prodi";
+            this.Label6.AutoSize = true;
+            this.Label6.Location = new System.Drawing.Point(34, 310);
+            this.Label6.Name = "Label6";
+            this.Label6.Size = new System.Drawing.Size(86, 20);
+            this.Label6.TabIndex = 10;
+            this.Label6.Text = "Kode Prodi";
             // 
-            // textBox4
+            // txtKodeProdi
             // 
-            this.textBox4.Location = new System.Drawing.Point(198, 304);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 26);
-            this.textBox4.TabIndex = 11;
+            this.txtKodeProdi.Location = new System.Drawing.Point(198, 304);
+            this.txtKodeProdi.Name = "txtKodeProdi";
+            this.txtKodeProdi.Size = new System.Drawing.Size(100, 26);
+            this.txtKodeProdi.TabIndex = 11;
             // 
-            // textBox6
+            // btnConnect
             // 
-            this.textBox6.Location = new System.Drawing.Point(490, 35);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(137, 26);
-            this.textBox6.TabIndex = 13;
-            this.textBox6.Text = "Membuka Koneksi";
+            this.btnConnect.Location = new System.Drawing.Point(490, 35);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(137, 26);
+            this.btnConnect.TabIndex = 13;
+            this.btnConnect.Text = "Membuka Koneksi";
             // 
-            // textBox7
+            // btnDelete
             // 
-            this.textBox7.Location = new System.Drawing.Point(490, 272);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(137, 26);
-            this.textBox7.TabIndex = 14;
-            this.textBox7.Text = "Menghapus Data";
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.btnDelete.Location = new System.Drawing.Point(490, 272);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(137, 26);
+            this.btnDelete.TabIndex = 14;
+            this.btnDelete.Text = "Menghapus Data";
+            this.btnDelete.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
-            // textBox8
+            // btnUpdate
             // 
-            this.textBox8.Location = new System.Drawing.Point(490, 201);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(137, 26);
-            this.textBox8.TabIndex = 15;
-            this.textBox8.Text = "Mengubah Data";
+            this.btnUpdate.Location = new System.Drawing.Point(490, 201);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(137, 26);
+            this.btnUpdate.TabIndex = 15;
+            this.btnUpdate.Text = "Mengubah Data";
             // 
-            // textBox9
+            // btnInsert
             // 
-            this.textBox9.Location = new System.Drawing.Point(490, 143);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(137, 26);
-            this.textBox9.TabIndex = 16;
-            this.textBox9.Text = "Menambah Data";
+            this.btnInsert.Location = new System.Drawing.Point(490, 143);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(137, 26);
+            this.btnInsert.TabIndex = 16;
+            this.btnInsert.Text = "Menambah Data";
             // 
-            // textBox10
+            // btnLoad
             // 
-            this.textBox10.Location = new System.Drawing.Point(490, 86);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(147, 26);
-            this.textBox10.TabIndex = 17;
-            this.textBox10.Text = "Menampilkan Data";
+            this.btnLoad.Location = new System.Drawing.Point(490, 86);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(147, 26);
+            this.btnLoad.TabIndex = 17;
+            this.btnLoad.Text = "Menampilkan Data";
             // 
             // dataGridView1
             // 
@@ -228,23 +229,23 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.btnLoad);
+            this.Controls.Add(this.btnInsert);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnConnect);
+            this.Controls.Add(this.txtKodeProdi);
+            this.Controls.Add(this.Label6);
+            this.Controls.Add(this.txtAlamat);
             this.Controls.Add(this.dtpTanggalLahir);
-            this.Controls.Add(this.cmbjk);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cmbJK);
+            this.Controls.Add(this.txtNama);
+            this.Controls.Add(this.txtNIM);
+            this.Controls.Add(this.Label4);
+            this.Controls.Add(this.Label5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Label2);
+            this.Controls.Add(this.Label1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -256,26 +257,26 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Label1;
+        private System.Windows.Forms.Label Label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label Label5;
+        private System.Windows.Forms.Label Label4;
+        private System.Windows.Forms.TextBox txtNIM;
+        private System.Windows.Forms.TextBox txtNama;
         private System.Windows.Forms.DateTimePicker dtpTanggalLahir;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtAlamat;
+        private System.Windows.Forms.Label Label6;
+        private System.Windows.Forms.TextBox txtKodeProdi;
+        private System.Windows.Forms.TextBox btnConnect;
+        private System.Windows.Forms.TextBox btnDelete;
+        private System.Windows.Forms.TextBox btnUpdate;
+        private System.Windows.Forms.TextBox btnInsert;
+        private System.Windows.Forms.TextBox btnLoad;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        public System.Windows.Forms.ComboBox cmbjk;
+        public System.Windows.Forms.ComboBox cmbJK;
     }
 }
 
