@@ -8,15 +8,12 @@ namespace CRUDMahasiswaADO
     {
         private readonly SqlConnection conn;
         private readonly string connectionString =
-            "Data Source=LAPTOP-RB8DQ53H\\ZIZEE;Initial Catalog=DBAkademikADO;Integrated Security=True";
+        "Data Source=LAPTOP-RB8DQ53H\\ZIZEE;Initial Catalog=DBAkademikADO;Integrated Security=True";
         public Form1()
-
         {
             InitializeComponent();
             conn = new SqlConnection(connectionString);
         }
-      
-        
 
         private void ConnectDataBase()
         {
@@ -32,12 +29,13 @@ namespace CRUDMahasiswaADO
             {
                 MessageBox.Show("Koneksi gagal: " + ex.Message);
             }
-
         }
+
         private void btnConnect_Click(object sender, EventArgs e)
         {
             ConnectDataBase();
         }
+
         private void btnLoad_Click(object sender, EventArgs e)
         {
             try
@@ -79,6 +77,7 @@ namespace CRUDMahasiswaADO
                 MessageBox.Show("Gagal menampilkan data: " + ex.Message);
             }
         }
+
         private void btnInsert_Click(object sender, EventArgs e)
         {
             try
@@ -88,16 +87,17 @@ namespace CRUDMahasiswaADO
                     conn.Open();
                 }
 
-                if (Label1.Text == "")
+
+                if (txtNIM.Text == "")
                 {
                     MessageBox.Show("NIM harus diisi");
-                    Label1.Focus();
+                    txtNIM.Focus();
                     return;
                 }
-                if (Label2.Text == "")
+                if (txtNama.Text == "")
                 {
                     MessageBox.Show("Nama harus diisi");
-                    Label2.Focus();
+                    txtNama.Focus();
                     return;
                 }
                 if (cmbJK.Text == "")
@@ -106,10 +106,10 @@ namespace CRUDMahasiswaADO
                     cmbJK.Focus();
                     return;
                 }
-                if (Label6.Text == "")
+                if (txtKodeProdi.Text == "")
                 {
                     MessageBox.Show("Kode Prodi harus diisi");
-                    Label6.Focus();
+                    txtKodeProdi.Focus();
                     return;
                 }
 
@@ -119,12 +119,14 @@ namespace CRUDMahasiswaADO
                                 (@NIM, @Nama, @JK, @TanggalLahir, @Alamat, @KodeProdi, @TanggalDaftar)";
 
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@NIM", Label1.Text);
-                cmd.Parameters.AddWithValue("@Nama", Label2.Text);
+
+
+                cmd.Parameters.AddWithValue("@NIM", txtNIM.Text);
+                cmd.Parameters.AddWithValue("@Nama", txtNama.Text);
                 cmd.Parameters.AddWithValue("@JK", cmbJK.Text);
                 cmd.Parameters.AddWithValue("@TanggalLahir", dtpTanggalLahir.Value.Date);
-                cmd.Parameters.AddWithValue("@Alamat", label3.Text);
-                cmd.Parameters.AddWithValue("@KodeProdi", Label6.Text);
+                cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text);
+                cmd.Parameters.AddWithValue("@KodeProdi", txtKodeProdi.Text);
                 cmd.Parameters.AddWithValue("@TanggalDaftar", DateTime.Now);
 
                 int result = cmd.ExecuteNonQuery();
@@ -133,7 +135,7 @@ namespace CRUDMahasiswaADO
                 {
                     MessageBox.Show("Data mahasiswa berhasil ditambahkan");
                     ClearForm();
-                    btnLoad.Click(null, null);
+                    btnLoad_Click(null, null); // ✅ DIPERBAIKI
                 }
                 else
                 {
@@ -145,6 +147,7 @@ namespace CRUDMahasiswaADO
                 MessageBox.Show("Terjadi kesalahan: " + ex.Message);
             }
         }
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
@@ -176,7 +179,7 @@ namespace CRUDMahasiswaADO
                 {
                     MessageBox.Show("Data berhasil diupdate");
                     ClearForm();
-                    btnLoad.PerformClick();
+                    btnLoad_Click(null, null); // ✅ DIPERBAIKI
                 }
                 else
                 {
@@ -188,6 +191,7 @@ namespace CRUDMahasiswaADO
                 MessageBox.Show("Terjadi kesalahan: " + ex.Message);
             }
         }
+
         private void btnDelete_Click(object sender, EventArgs e)
         {
             try
@@ -215,7 +219,7 @@ namespace CRUDMahasiswaADO
                     {
                         MessageBox.Show("Data berhasil dihapus");
                         ClearForm();
-                        btnLoad.PerformClick();
+                        btnLoad_Click(null, null); // ✅ DIPERBAIKI
                     }
                     else
                     {
@@ -228,6 +232,7 @@ namespace CRUDMahasiswaADO
                 MessageBox.Show("Terjadi kesalahan: " + ex.Message);
             }
         }
+
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -241,6 +246,7 @@ namespace CRUDMahasiswaADO
                 txtKodeProdi.Text = row.Cells["KodeProdi"].Value.ToString();
             }
         }
+
         private void ClearForm()
         {
             txtNIM.Clear();
@@ -251,6 +257,7 @@ namespace CRUDMahasiswaADO
             dtpTanggalLahir.Value = DateTime.Now;
             txtNIM.Focus();
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             cmbJK.Items.Clear();
@@ -265,26 +272,7 @@ namespace CRUDMahasiswaADO
 
             dataGridView1.CellClick += dataGridView1_CellClick;
         }
-    }
-}
-private void textBox7_TextChanged(object sender, EventArgs e)
-        {
 
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpTanggalLahir_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
