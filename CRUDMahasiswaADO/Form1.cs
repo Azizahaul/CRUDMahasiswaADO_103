@@ -6,6 +6,9 @@ namespace CRUDMahasiswaADO
 {
     public partial class Form1 : Form
     {
+        private readonly SqlConnection conn;
+        private readonly string connectionString =
+            "Data Source=LAPTOP-RB8DQ53H\\ZIZEE;Initial Catalog=DBAkademikADO;Integrated Security=True";
         public Form1()
         {
             InitializeComponent();
