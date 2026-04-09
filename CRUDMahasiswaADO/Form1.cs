@@ -241,7 +241,16 @@ namespace CRUDMahasiswaADO
                 txtKodeProdi.Text = row.Cells["KodeProdi"].Value.ToString();
             }
         }
-
+        private void ClearForm()
+        {
+            txtNIM.Clear();
+            txtNama.Clear();
+            cmbJK.SelectedIndex = -1;
+            txtAlamat.Clear();
+            txtKodeProdi.Clear();
+            dtpTanggalLahir.Value = DateTime.Now;
+            txtNIM.Focus();
+        }
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
 
