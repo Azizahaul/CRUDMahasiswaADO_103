@@ -20,7 +20,6 @@ namespace CRUDMahasiswaADO
         public RekapMahasiswa()
         {
             InitializeComponent();
-            // PANGGIL FUNGSI LOAD PRODI DI SINI AGAR PASTI DIEKSEKUSI
             LoadDataProdi();
         }
 
