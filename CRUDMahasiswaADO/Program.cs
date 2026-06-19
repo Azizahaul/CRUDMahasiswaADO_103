@@ -16,7 +16,9 @@ namespace CRUDMahasiswaADO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            // Nah, ini kodenya sudah diubah agar Dashboard yang muncul duluan!
+            Application.Run(new labelTahun());
         }
     }
 }
