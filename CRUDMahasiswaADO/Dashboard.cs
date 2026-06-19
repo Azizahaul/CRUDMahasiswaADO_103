@@ -13,7 +13,7 @@ namespace CRUDMahasiswaADO
 {
     public partial class labelTahun : Form
     {
-        
+        DAL dbLogic = new DAL();
         bool isInitializing = true;
         DataTable dt;
         int button = 0;
